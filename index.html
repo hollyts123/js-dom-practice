@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Manager</title>
+    <style>
+        .postItem{
+            border: 2px solid lightgreen;
+            background-color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .featured {
+            border: 2px solid gold;
+            background-color: #fffbe6;
+        }
+
+        .edit-mode {
+            display: none;
+        }
+
+        .postBtn {
+            margin-top: 10px;
+        }
+
+        .editBtn, .deleteBtn {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Blog Post Manager</h1>
+
+    <form id="blogForm">
+        <label for="postTitle">Title:</label>
+        <input type="text" id="postTitle" required>
+        <br><br>
+        <label for="postContent">Content:</label>
+        <textarea id="postContent" rows="5" required></textarea>
+        <br><br>
+        <button type="submit">Add Post</button>
+    </form>
+
+
+    <h2>Blog Posts</h2>
+    <div id="postList"></div>
+    <script src="script.js"></script>
+
+</body>
+</html>
